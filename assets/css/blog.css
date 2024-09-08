@@ -1,61 +1,11 @@
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
   margin-top: 0;
-}
-
-/* Dark Mode */
-.dark {
-  background-color: #243447;
-  height: 100vh;
-  color: #bebebe;
-}
-
-.dark li a {
-  color: #bebebe;
-}
-
-.dark li a:hover {
-  background-color: #111;
-}
-
-/* Light Mode */
-.light {
-  background-color: #fff8f2;
-  color: black;
-  height: 100vh;
-}
-
-.light li a {
-  color: black;
-}
-
-.light li a:hover {
-  background-color: rgb(29, 128, 210);
-}
-
-/* Styling the Switch button */
-.switch {
-  position: fixed;
-  right: 50px;
-  top: 15px;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
 }
 
 #back-btn {
@@ -67,12 +17,14 @@ h1 {
   background-color: black;
   color: white;
 }
-footer {
-  position: fixed;
-  border-style: solid;
-  width: 98%;
 
-  bottom: 50px;
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  padding: 20px;
+  text-align: center;
+  border-style: solid;
 }
 
 .blog-post {
@@ -88,7 +40,3 @@ footer {
     margin-top: 0;
   }
 }
-
-/* .dark {
-  border-color: white;
-} */

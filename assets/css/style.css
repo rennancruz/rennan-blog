@@ -4,3 +4,53 @@
 body {
   padding: 0;
 }
+
+/* Dark Mode */
+.dark {
+  background-color: #243447;
+  height: 100vh;
+  color: #bebebe;
+}
+
+.dark li a {
+  color: #bebebe;
+}
+
+.dark li a:hover {
+  background-color: #111;
+}
+
+/* Light Mode */
+.light {
+  background-color: #fff8f2;
+  color: black;
+  height: 100vh;
+}
+
+.light li a {
+  color: black;
+}
+
+.light li a:hover {
+  background-color: rgb(29, 128, 210);
+}
+
+/* Styling the Switch emoji */
+.switch {
+  position: fixed;
+  right: 50px;
+  top: 15px;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* The emoji switcher */
+.emoji-switch {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  inset: -22px 0px 0px 0px;
+  font-size: x-large;
+}

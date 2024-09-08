@@ -19,12 +19,21 @@ buttonEl.addEventListener("click", function (event) {
   const user = document.querySelector("#username").value;
   const content = document.querySelector("#content").value;
 
-  if (blogTitle === "") {
-    displayMessage("error", "Blog cannot be blank");
-  } else if (user === "") {
-    displayMessage("error", "Username cannot be blank");
+  if (user === "") {
+    displayMessage(
+      "error",
+      "Oops, looks like your username is blank. Please insert a valid username."
+    );
+  } else if (blogTitle === "") {
+    displayMessage(
+      "error",
+      "Oops, looks like your blog title is blank. Please insert a valid blog title."
+    );
   } else if (content === "") {
-    displayMessage("error", "Content cannot be blank");
+    displayMessage(
+      "error",
+      "Oops, looks like your blog content is blank. Please insert a valid blog content."
+    );
   } else {
     const userInfo = {
       username: user,
